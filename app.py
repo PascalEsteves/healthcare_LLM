@@ -31,15 +31,14 @@ def main():
 
     st.write(css, unsafe_allow_html=True)
 
-    #get vector store
+    #Get Qdrant Object
     CL_QD= CLIENT_QD()
-    vector_store = CL_QD.vector_storage
 
-    # create rag_pipeline
+    #Create rag_pipeline
     rag_pipeline = RetrievalQA.from_chain_type(
         llm=get_llm(),
         chain_type="stuff",
-        retriever=vector_store.as_retriever()
+        retriever=CL_QD.vector_storage.as_retriever()
     )
 
     st.header("Chat with your personal Doctor")
