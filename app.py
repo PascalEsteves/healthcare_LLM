@@ -32,6 +32,7 @@ def main():
     CL_QD= CLIENT_QD()
     vector_store = CL_QD.vector_storage
 
+    #Create RAG pipeline
     rag_pipeline = RetrievalQA.from_chain_type(
         llm=get_llm(),
         chain_type="stuff",
