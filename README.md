@@ -30,8 +30,17 @@ pip install -r requirements.tx
 ```
 # Step 5 - Creat .env file
 Create .env file in a text editor and provide your Qdrant Managed Cloud Service creadentials and huggingface api token
+QDRANT_API=...
+QDRANT_HOST=...
+COLLECTION_NAME=...
+HUGGINGFACEHUB_API_TOKEN=...
 
-# Step 6  - Start app
+# Step 6 - Generate and ingest data in Qdrant Colleciton
+```sh
+python data_ingestion.py
+```
+
+# Step 7  - Start app
 ```sh
 streamlit run app.py
 ```
