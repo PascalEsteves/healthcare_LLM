@@ -32,13 +32,12 @@ def main():
     CL_QD= CLIENT_QD()
     vector_store = CL_QD.vector_storage
 
-
     rag_pipeline = RetrievalQA.from_chain_type(
         llm=get_llm(),
         chain_type="stuff",
         retriever=vector_store.as_retriever()
     )
-
+    
     st.header("Chat with your personal Doctor")
     user_question = st.text_input("Ask a question :")
 
