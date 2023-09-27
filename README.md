@@ -15,7 +15,7 @@ go to the cloned repository directory
 ```sh
 python -m venv .
 ```
-# Step 2  - Activate env
+# Step 3  - Activate env
 MAC:
 ```sh
 source bin/activate
@@ -24,13 +24,14 @@ Windows:
 ```sh
 Scripts\activate
 ```
-# Step 3  - Install Requirements
+# Step 34 - Install Requirements
 ```sh
 pip install -r requirements.tx
 ```
-# Step 4 - Creat .env file
+# Step 5 - Creat .env file
 Create .env file in a text editor and provide your Qdrant Managed Cloud Service creadentials and huggingface api token
-# Step 3  - Start app
+
+# Step 6  - Start app
 ```sh
 streamlit run app.py
 ```
