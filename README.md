@@ -24,7 +24,7 @@ Windows:
 ```sh
 Scripts\activate
 ```
-# Step 34 - Install Requirements
+# Step 4 - Install Requirements
 ```sh
 pip install -r requirements.tx
 ```
