@@ -3,7 +3,7 @@
 - UI developed with streamlit for easy interaction with solution 
 - Application of RAG architecture with LLM : meta-llama/Llama-2-7b-chat-hf , encoding model :BAAI/bge-large-en-v1.5
 - Integration with Qdrant's Managed Cloud Service
-- Suplied dataset : taaredikahan23/Medical_dataset , source: https://huggingface.co/datasets
+- Suplied dataset : taaredikahan23/Medical_dataset , source: [https://huggingface.co/datasets](https://huggingface.co/datasets/taaredikahan23/Medical_dataset)
 
 ## Installation:
 # Step 1 - Clone this repository to your local machine:
